@@ -1,0 +1,107 @@
+@import "../../style.scss";
+
+
+.login{
+    height: 100vh;
+    background-color: rgb(193, 190, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .card{
+        width: 50%;
+        display: flex;
+        background-color: white;
+        border-radius: 10px;
+        min-height: 600px;
+        overflow: hidden;
+        @include mobile{
+            width: 100%;
+            margin: 20px;
+        }
+
+        .left{
+            flex: 1;
+            background: linear-gradient(rgb(39,11,96,0.5),rgb(39,11,96,0.5)), url('https://images.hdqwalls.com/download/astronaut-nasa-take-me-away-4k-9f-2560x1440.jpg') center;
+            background-size: cover;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            color: whitesmoke;
+            @include mobile{
+            display: none;
+            }
+
+            h1{
+                font-size: 50px;
+            }
+
+            p{
+                
+            }
+
+            span{
+                font-size: 14px;
+            }
+
+            button{
+                width: 50%;
+                padding: 10px;
+                border: none;
+                background-color: white;
+                color: rebeccapurple;
+                cursor: pointer;
+                font-weight: bold;
+            }
+
+        }
+        .right{
+            flex: 1;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            justify-content: center;
+
+            h1{
+                color: #555;
+            }
+
+            form{
+
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+
+                input{
+                    border: none;
+                    border-bottom: 1px solid lightgray;
+                    padding: 20px 10px;
+
+                }
+
+                button{
+
+                    cursor: pointer;
+                    width: 50%;
+                    border: none;
+                    background-color: #938eef;
+                    color: white;
+                    padding: 10px;
+                    font-weight: bold;
+
+                }
+            }
+            button{
+                width: 50%;
+                padding: 10px;
+                border: none;
+                background-color: white;
+                color: rebeccapurple;
+                cursor: pointer;
+                font-weight: bold;
+            }
+        }
+    }
+}

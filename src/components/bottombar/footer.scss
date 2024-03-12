@@ -1,0 +1,7 @@
+@import "../../style.scss";
+.Footer{
+    display: none;
+    @include mobile{
+       display: unset;
+    }
+}
